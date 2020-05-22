@@ -2,6 +2,7 @@ const {MongoClient} = require('mongodb');
 
 
 const uri = 'mongodb+srv://kloverde:***REMOVED***@cluster0-w11ml.gcp.mongodb.net/resume?retryWrites=true&w=majority';
+
 const mongoClient = new MongoClient(uri);
 
 async function getMongoDB()
