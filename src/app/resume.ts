@@ -1,5 +1,6 @@
 export interface Resume {
   _id: string;
+  objective: string;
   owners_pk: string;
   first_name: string;
   last_name: string;

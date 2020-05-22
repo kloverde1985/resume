@@ -10,7 +10,7 @@ async function getAllResumes(){
 
 async function getResumes(id){
   const mdg = await getMongoDB();
-  return mdg.collection(resumes).find({owners_pk:id}).toArray();
+  return mdg.collection(resumes).findOne({owners_pk:id});
 
 }
 
@@ -24,7 +24,7 @@ async function getCollections()
 
 module.exports =
   {
-    getAllOwners: getAllResumes,
+     getAllResumes,
     getResumes,
     getCollections
   }

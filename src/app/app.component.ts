@@ -22,7 +22,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
 
-    this.dataService.getResume('/resumes').pipe(takeUntil(this.destroy$))
+    this.dataService.getResume('/resumes?id=1').pipe(takeUntil(this.destroy$))
       .subscribe((res: Resume) => {
         this.resume = res;
         console.log(this.resume);

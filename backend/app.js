@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const cors = require('cors');
-const {getAllOwners,getResumes,getCollections} = require ('./resume');
+const {getResumes,getAllResumes,getCollections} = require ('./resume');
 app.use(helmet());
 
 app.use(bodyParser.json());
@@ -23,7 +23,7 @@ app.get('/resumes',async (req,res) => {
   let id =req.query.id;
   if(!id)
   {
-    res.send(await getAllOwners()) ;
+    res.send(await getAllResumes()) ;
   } else
   {
     res.send(await getResumes(id));
