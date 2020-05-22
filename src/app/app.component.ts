@@ -26,7 +26,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.dataService.getResume('/resumes?id=1').pipe(takeUntil(this.destroy$))
       .subscribe((res: Resume) => {
         this.resume = res;
-        console.log(this.resume);
       });
   }
 

@@ -18,14 +18,15 @@ export class SkillsComponent implements OnInit, OnChanges {
   hasChild = (_: number, node: Skills) => !!node.children && node.children.length > 0;
 
   constructor() {
+
+    this.treeControl = new NestedTreeControl<Skills>(node => node.children);
+    this.dataSource = new MatTreeNestedDataSource<Skills>();
+    this.dataSource.data = this.skills;
   }
 
 
   ngOnInit(): void {
 
-    this.treeControl = new NestedTreeControl<Skills>(node => node.children);
-    this.dataSource = new MatTreeNestedDataSource<Skills>();
-    this.dataSource.data = this.skills;
   }
 
   ngOnChanges() {
