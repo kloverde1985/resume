@@ -7,9 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import {AngularMaterialModule} from './angular-material.module';
 import {MatTreeModule} from '@angular/material/tree';
+import { SkillsComponent } from './skills/skills.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

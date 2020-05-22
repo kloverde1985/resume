@@ -1,0 +1,115 @@
+{
+  "_id": {
+    "$oid": "5ec674415a1481b7016c4e46"
+  },
+  "owners_pk": "1",
+  "objective": "14+ years of experience developing custom software solutions for multiple industries. Full stack development, system administration and configuration, requirement gathering and project management.    ",
+  "first_name": "Kevin",
+  "last_name": "Loverde",
+  "email": "kloverde@gmail.com",
+  "phone": "+1-802-380-8382",
+  "education": {
+    "_id": {
+      "$oid": "5ec6aa7cf9c2c1bdb63a6962"
+    },
+    "education_pk": {
+      "$numberLong": "1"
+    },
+    "degree": "BS COMPUTER SCIENCE",
+    "start_date": {
+      "$date": {
+        "$numberLong": "1072933200000"
+      }
+    },
+    "end_date": {
+      "$date": {
+        "$numberLong": "1228107600000"
+      }
+    },
+    "description": "Deans list, member of Upsilon Pi Epsilon honor society ",
+    "name": "Keene State College"
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "skillList": [
+        "Java",
+        "Spring 4+",
+        "AngularJS",
+        "Angular 5+",
+        "JQuery",
+        "CSS",
+        "HTML5",
+        "Bootstrap",
+        "Python",
+        "XML",
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "C#"
+      ]
+    },
+    {
+      "category": "Databases",
+      "skillList": [
+        "MS SQL Server",
+        "Informix",
+        "Oracle",
+        "MongoDB",
+        "ElasticSearch"
+      ]
+    },
+    {
+      "category": "IDE",
+      "ide": [
+        "IntelliJ IDEA",
+        "Netbeans",
+        "Eclipse",
+        "Visual Studio",
+        "Spring Tools Suite"
+      ]
+    },
+    {
+      "category": "Source Control",
+      "ide": [
+        "git",
+        "bitbucket"
+      ]
+    },
+    {
+      "category": "build tools",
+      "ide": [
+        "Maven",
+        "Gradle"
+      ]
+    }
+  ],
+  "Experience": [
+    {
+      "title": "Programmer",
+      "company": "Selman & Company LLC",
+      "start_date": {
+        "$date": {
+          "$numberLong": "1519707600000"
+        }
+      },
+      "end_date": null,
+      "description": "Java software developer for internal and external websites. Utilized Spring Boot, Angular 4+, Bootstrap and JQuery to develop front and back ends.  Maintained internal policy management website. Written with Java business logic, JSP and JavaScript front end.  Worked on a new customer facing site, Java Spring back end, Angular 4+ front end.  Bootstrap CSS with JQuery "
+    },
+    {
+      "title": "Programmer",
+      "company": "Holstein Association USA",
+      "start_date": {
+        "$date": {
+          "$numberLong": "1329714000000"
+        }
+      },
+      "end_date": {
+        "$date": {
+          "$numberLong": "1519707600000"
+        }
+      },
+      "description": "Full stack web development. Java Spring Boot with Angular, Bootstrap and JQuery front ends.  \n \nUsing Docker containers with Jenkins for automated build and deployment.     \n \nLinux server administration, RHEL, Ubuntu and Gentoo. Configured and maintained web services;   Apache Tomcat   Apache HTTPD.     Resin Webserver  Database querying and administration:  \n \n Amazon Elasticsearch  PostgreSQL  MySQL  IBM Informix. "
+    }
+  ]
+}
