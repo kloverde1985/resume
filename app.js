@@ -1,7 +1,7 @@
 const express = require('express');
 const pool = require('./mysql_config');
 const app = express();
-const port = 3000;
+const port = 80;
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -38,4 +38,4 @@ app.get('/collections',async (req,res) =>
 })
 
 
-app.listen(port,() => console.log('Listening at http://localhost:${port}'))
+app.listen(port,() => console.log('Listening at http://localhost:'+port))

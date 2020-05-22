@@ -13,7 +13,7 @@ export class DataService {
       'Content-Type': 'application/json'
     })
   };
-  private REST_API_SERVER = 'http://localhost:3000';
+  private REST_API_SERVER = 'http://localhost:80';
 
   handleError(error: HttpErrorResponse) {
     let errorMessage = 'Unknown error!';
