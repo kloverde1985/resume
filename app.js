@@ -17,7 +17,8 @@ app.use(morgan('combined'));
 
 
 
-
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
 app.get('/resumes',async (req,res) => {
   let id =req.query.id;
