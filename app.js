@@ -1,7 +1,7 @@
 const express = require('express');
 const pool = require('./mysql_config');
 const app = express();
-const port = 80;
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const morgan = require('morgan');
