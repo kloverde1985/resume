@@ -4,6 +4,7 @@
     <div mat-card-avatar class="resume-header-image"></div>
     <mat-card-title>{{resume?.first_name}} {{resume?.last_name}}</mat-card-title>
     <mat-card-subtitle>{{resume?.email}}</mat-card-subtitle>
+    <mat-card-subtitle>{{resume?.phone}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <p>
@@ -11,14 +12,12 @@
     </p>
     <mat-tab-group mat-align-tabs="center">
       <mat-tab label="Education">
-
-
-
+<app-education [education]="resume.education"></app-education>
       </mat-tab>
       <mat-tab label="Skills">
       <app-skills [skills]="resume?.skills"></app-skills>
       </mat-tab>
-      <mat-tab label="Experience">Content 3</mat-tab>
+      <mat-tab label="Experience"><app-experience [experience]="resume.experience"></app-experience> </mat-tab>
     </mat-tab-group>
   </mat-card-content>
 </mat-card>
@@ -29,4 +28,3 @@
 
 
 
-<pre>{{resume | json}}</pre>

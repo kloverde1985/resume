@@ -10,7 +10,8 @@ import {Skills} from '../resume';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit, OnChanges {
-  _skills: Skills[];
+  @Input()
+  skills: Skills[];
 
   treeControl: NestedTreeControl<any>;
   dataSource: MatTreeNestedDataSource<any>;
@@ -19,20 +20,16 @@ export class SkillsComponent implements OnInit, OnChanges {
   constructor() {
   }
 
-  @Input()
-  set skills(skills: Skills[]) {
-    this._skills = skills;
-  }
 
   ngOnInit(): void {
 
     this.treeControl = new NestedTreeControl<Skills>(node => node.children);
     this.dataSource = new MatTreeNestedDataSource<Skills>();
-    this.dataSource.data = this._skills;
+    this.dataSource.data = this.skills;
   }
 
   ngOnChanges() {
 
-    this.dataSource.data = this._skills;
+    this.dataSource.data = this.skills;
   }
 }
