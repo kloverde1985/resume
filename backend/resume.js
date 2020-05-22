@@ -1,20 +1,30 @@
 const {getMongoDB} = require('./mongo');
 
-const owners = 'owners';
+const resumes = 'resumes';
 
-async function getAllOwners(){
+async function getAllResumes(){
   const mdg = await getMongoDB();
- return mdg.collection(owners).find({}).toArray();
+ return mdg.collection(resumes).find({}).toArray();
 
 }
 
-async function getOwners(id){
+async function getResumes(id){
   const mdg = await getMongoDB();
-  return mdg.collection(owners).find({owners_pk:id}).toArray();
+  return mdg.collection(resumes).find({owners_pk:id}).toArray();
 
 }
+
+async function getCollections()
+{
+
+  const mdg = await getMongoDB();
+  return mdg.collections().toArray();
+}
+
+
 module.exports =
   {
-    getAllOwners,
-    getOwners
+    getAllOwners: getAllResumes,
+    getResumes,
+    getCollections
   }
